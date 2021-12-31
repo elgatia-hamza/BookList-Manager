@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book List</title>
+
+    <script src="https://kit.fontawesome.com/dc8dd516a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4">
+            <i class="fa fa-book-open text-danger"></i>
+            My<span class="text-danger">Book</span>List
+        </h1>
+        <form action="" id="book-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input id="title" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input id="author" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN#</label>
+                <input id="isbn" type="text" class="form-control">
+            </div>
+            <input class="form-control btn btn-danger" type="submit" value="Add book">
+        </form>
+        <table class="table table-striped mt-4">
+            <thead>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN#</th>
+                <th></th>
+            </thead>
+            <tbody id='book-list'></tbody>
+        </table>
+    </div>
+</body>
+    <script src="main.js"></script>
+</html>
